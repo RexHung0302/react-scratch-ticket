@@ -210,6 +210,7 @@ export default useIndexController;
 
 - [ ] Multiple scratchable areas on the same scratch ticket
 - [ ] Clear animation optimization (e.g., automatic scratch animation from left to right, instead of disappearing all at once)
+- [ ] Add a restricted area for scratch completion on the scratch ticket
 - [x] Release the first version
 
 ## Author
