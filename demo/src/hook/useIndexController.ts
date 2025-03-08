@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { ScratchTicketImperative } from "../../../src/index";
+import { ScratchTicketImperative } from "../../../src/index"; // Use for local demo
+// import { ScratchTicketImperative } from "react-scratch-ticket"; // Use for npm package
 
 /**
  * @description Fake Prize Array

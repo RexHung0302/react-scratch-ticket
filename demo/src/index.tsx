@@ -1,5 +1,6 @@
 import React from "react";
-import { ReactScratchTicket } from "../../src/index";
+import { ReactScratchTicket } from "../../src/index"; // Use for local demo
+// import { ReactScratchTicket } from "react-scratch-ticket"; // Use for npm package
 import ReactDOM from "react-dom/client";
 import useIndexController from "./hook/useIndexController";
 import './style.scss';
