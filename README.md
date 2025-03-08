@@ -27,6 +27,10 @@ If you have any ideas or features you'd like to see added to this package, feel 
 
 ### 🏠 [Homepage](https://github.com/RexHung0302/react-scratch-ticket#readme)
 
+### 📦 [NPM](https://www.npmjs.com/package/react-scratch-ticket)
+
+### 📝 [Blog](https://rexhung0302.github.io/2025/03/09/20250309/)
+
 ## Preview
 
 ![With Color Demo](./with-bg-color-demo.gif)
