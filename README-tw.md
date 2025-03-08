@@ -27,6 +27,8 @@
 
 ### 🏠 [Homepage](https://github.com/RexHung0302/react-scratch-ticket#readme)
 
+## 預覽
+
 ![With Color Demo](./with-bg-color-demo.gif)
 > 使用 Prop maskingLayerColor 傳入蒙層顏色
 

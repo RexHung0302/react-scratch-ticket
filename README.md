@@ -27,6 +27,8 @@ If you have any ideas or features you'd like to see added to this package, feel 
 
 ### 🏠 [Homepage](https://github.com/RexHung0302/react-scratch-ticket#readme)
 
+## Preview
+
 ![With Color Demo](./with-bg-color-demo.gif)
 > With Background Color Demo
 
