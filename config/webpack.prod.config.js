@@ -7,9 +7,18 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const commonConfig = {
+const esmConfig = {
     mode: 'production',
     entry: path.join(__dirname, "../src/index.tsx"),
+    output: {
+        path: path.join(__dirname, "../dist/"),
+        filename: "index.esm.js",
+        libraryTarget: 'module',
+        module: true,
+    },
+    experiments: {
+        outputModule: true,
+    },
     module: {
         rules: [
             {
@@ -39,7 +48,7 @@ const commonConfig = {
                     },
                     { loader: 'sass-loader' }
                 ]
-            }
+            },
         ]
     },
     plugins: [
@@ -48,30 +57,10 @@ const commonConfig = {
         })
     ],
     externals: {
-        react: 'React',
-        'react-dom': 'ReactDOM'
+        react: 'react',
+        'react-dom': 'react-dom'
     },
+    externalsType: 'module',
 };
 
-const umdConfig = merge(commonConfig, baseConfig, {
-    output: {
-        path: path.join(__dirname, "../dist/"),
-        filename: "index.js",
-        libraryTarget: 'umd',
-        libraryExport: 'default',
-    },
-});
-
-const esmConfig = merge(commonConfig, baseConfig, {
-    output: {
-        path: path.join(__dirname, "../dist/"),
-        filename: "index.esm.js",
-        libraryTarget: 'module',
-        libraryExport: 'default',
-    },
-    experiments: {
-        outputModule: true,
-    },
-});
-
-export default [umdConfig, esmConfig];
+export default merge(esmConfig, baseConfig);
